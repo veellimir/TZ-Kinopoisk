@@ -9,6 +9,7 @@ readme = "README.md"
 python = "3.12.7"
 fastapi = {extras = ["all"], version = "^0.115.4"}
 sqlalchemy = "^2.0.36"
+fastapi-users = {extras = ["sqlalchemy"], version = "^14.0.0"}
 
 
 [build-system]

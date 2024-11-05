@@ -7,7 +7,7 @@ from fastapi.responses import ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from settings.config import settings
-from core.database.db_helper import db_helper
+from database.db_helper import db_helper
 
 
 @asynccontextmanager
