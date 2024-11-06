@@ -10,8 +10,8 @@ from alembic import context
 from settings.config import settings
 from database.base import Base
 
-from app.authentication.models import AccessToken
 from app.users.models import User
+from app.authentication.models import AccessToken
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
