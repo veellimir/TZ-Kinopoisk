@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from settings.config import settings
 from database.db_helper import db_helper
+from api_v1 import router as api_router
 
 
 @asynccontextmanager
@@ -22,9 +23,9 @@ app = FastAPI(
     default_response_class=ORJSONResponse,
     lifespan=lifespan,
 )
-# main_app.include_router(
-#     api_router,
-# )
+app.include_router(
+    api_router,
+)
 
 origins = [
     "http://localhost:5173",
