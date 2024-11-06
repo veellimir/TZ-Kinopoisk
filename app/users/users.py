@@ -9,7 +9,7 @@ from schemas.user import (
 
 router = APIRouter(
     prefix=settings.api.v1.users,
-    tags=["Users"],
+    tags=["Пользователи"],
 )
 
 router.include_router(
